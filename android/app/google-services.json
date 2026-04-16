@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "277415438277",
+    "project_id": "gestion-ahimet",
+    "storage_bucket": "gestion-ahimet.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277415438277:android:35c14748b24547ca978dac",
+        "android_client_info": {
+          "package_name": "com.example.gestion_ahimet_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF_tGO0n_tUD2hnNtLPh6akYhUe9iqTKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277415438277:android:fd20ca2dcb867eb8978dac",
+        "android_client_info": {
+          "package_name": "com.example.gestion_ahimet_v2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF_tGO0n_tUD2hnNtLPh6akYhUe9iqTKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
