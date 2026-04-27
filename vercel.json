@@ -1,5 +1,5 @@
 {
-  "installCommand": "if [ ! -d \"flutter\" ]; then git clone https://github.com/flutter/flutter.git -b stable; fi && ./flutter/bin/flutter doctor && ./flutter/bin/flutter config --enable-web",
-  "buildCommand": "./flutter/bin/flutter build web --release --web-renderer canvaskit",
+  "installCommand": "if [ ! -d \"flutter\" ]; then git clone https://github.com/flutter/flutter.git -b stable; fi && ./flutter/bin/flutter config --enable-web",
+  "buildCommand": "./flutter/bin/flutter build web --release",
   "outputDirectory": "build/web"
 }
