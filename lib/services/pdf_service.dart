@@ -22,7 +22,7 @@ class PdfService {
         ),
         build: (pw.Context context) {
           return [
-            // Se eliminó la sección del logo
+            // El contrato se mantiene intacto
             pw.Center(
               child: pw.Text("CONTRATO INDIVIDUAL DE TRABAJO",
                   style: pw.TextStyle(
@@ -78,13 +78,17 @@ class PdfService {
       ),
     );
 
-    await Printing.layoutPdf(
-      onLayout: (PdfPageFormat format) async => pdf.save(),
-      name:
+    // ✅ MODIFICACIÓN FINAL PARA IPHONE/WEB:
+    // En lugar de layoutPdf, usamos sharePdf para que abra el menú nativo del dispositivo
+    final bytes = await pdf.save();
+    await Printing.sharePdf(
+      bytes: bytes,
+      filename:
           "Contrato_${(datos['nombre'] ?? 'SinNombre').replaceAll(' ', '_')}.pdf",
     );
   }
 
+  // --- MÉTODOS DE APOYO (SIN CAMBIOS) ---
   static pw.Widget _p(String text) => pw.Padding(
       padding: const pw.EdgeInsets.only(bottom: 4),
       child: pw.Text(text,
